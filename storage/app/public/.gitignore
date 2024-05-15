@@ -1,0 +1,6 @@
+*
+!songs/
+!songs/*
+!images/
+!images/*
+!.gitignore

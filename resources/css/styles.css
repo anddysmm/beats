@@ -1,0 +1,165 @@
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+.userCard {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 100%;
+    overflow: hidden; /* Esto recortará la imagen que se salga del contenedor */
+    position: relative; /* Permite posicionar la imagen dentro del contenedor */
+}
+
+.userCard img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* Esto mantendrá la proporción original de la imagen */
+    position: absolute; /* Permite posicionar la imagen */
+    top: 50%; /* La posición vertical será centrada */
+    left: 50%; /* La posición horizontal será centrada */
+    transform: translate(-50%, -50%); /* Esto centrará la imagen correctamente */
+}
+.audioDiv {
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+.containersMusic {
+    width:30%;
+    align-items: center;
+}
+.musicImage {
+    width: 80px;
+    height: 80px;
+    max-height: 97%;
+    border-radius: 9%;
+    max-width: 80px;
+    min-width: 80px;
+}
+.nav {
+    padding: 17px;
+    height: 102px;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+.details {
+    width: 550px;
+    height: 660px;
+}
+.hamburguer {
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.imagePlaylist {
+    height: 500px;
+    width: 450px;
+}
+.scroll-container {
+    max-height:90vh; /* Ajusta según sea necesario */
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        padding-bottom: 8vh;
+    }
+    .containersMusic {
+        width: 50%;
+        padding-bottom: 7px;
+        padding-left: 7px;
+    }
+    .elementoMovil {
+      display: none !important;
+    }
+    .musicImage {
+        width: 50px;
+        height: 60px;
+    }
+    .pogressBar {
+        width: 80%;
+    }
+    .audioDiv {
+        margin: 1vh;
+        width: 96vw !important;
+    }
+    .contNav{
+        width: 100% !important;
+    }
+    .fixed-top-mobile {
+        margin-top: 2vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999999; /* Ajusta según sea necesario */
+    }
+    .formSearch {
+        padding-left: 5vw;
+        width: 100vh !important;
+    }
+    .hamburguerElement {
+        margin-top: 5.4vh;
+        background-color: rgba(255, 255, 255, 0.897);
+    }
+    .imagePlaylist {
+        height: 250px;
+        width: 225px;
+    }
+    .details {
+        width: 90vw;
+        height: auto;
+    }
+  }
+
+
+  .background-image-div {
+    background-image: url('https://xmple.com/wallpaper/gradient-blue-linear-2796x1290-c2-87cefa-b0c4de-a-15-f-14.svg');
+    background-size: cover;
+    height: 325px; 
+    width: 100%; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background-image-div img {
+    margin-top: 50px;
+    position: absolute;
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 150px; 
+    height: 150px; 
+}
+
+.background-image-div h1 {
+    margin-top: 5px;
+
+}
+
+.background-image-div p {
+    margin-top: 180px;
+    
+}
+
+.card {
+    height: 215px; 
+    overflow: hidden;
+}
+
+.card-body {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body p {
+    margin-bottom: 5px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.upcoming-events-container {
+    margin-top: 30px; 
+}
