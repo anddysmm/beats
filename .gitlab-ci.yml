@@ -1,0 +1,18 @@
+stages:
+  - docs
+pages:
+  image: python:3.8-buster
+  stage: docs
+  script:
+    # Instalación de MkDocs y tema Material
+    - pip install mkdocs
+    - pip install mkdocs-material
+    # Construcción de la documentación
+    - mkdocs build
+    # Preparación de los artefactos para ser compartidos
+    - mkdir -p public
+    # Copiar la documentación generada a la carpeta /docs en public
+    - cp -r site/* public
+  artifacts:
+    paths:
+      - public
