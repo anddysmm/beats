@@ -1,7 +1,4 @@
 Aplicación hecha con Laravel de backend y React como frontend.
 
 ### Video de la aplicaión:
-<video width="640" height="360" controls>
-  <source src="https://github.com/anddysmm/beats/raw/refs/heads/main/docs/VideoProyectoBeats.webm" type="video/webm">
-  Tu navegador no soporta este formato de video.
-</video>
+[![Ver Video](https://img.youtube.com/vi/ID_DEL_VIDEO/0.jpg)](https://mega.nz/embed/b5ZlABjJ#2aUl9FtU2xPz1OyEeTrAbUHqqTWccwzL7A7P4fYmRZA)
